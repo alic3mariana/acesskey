@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página com ferramentas de Inteligência Artificial, incluindo geradores de imagens, assistentes pessoais e muito mais.">
+    <title>Ferramentas de Inteligência Artificial</title>
+    <style>
+        /* Reset básico para garantir consistência entre navegadores */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Estilo do body */
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Estilo do cabeçalho */
+        header {
+            background: linear-gradient(135deg, #941cf7, #0092cc);
+            color: #fff;
+            padding: 1rem 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        /* Estilo principal do conteúdo */
+        main {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Container do carrossel */
+        .carousel-container {
+            position: relative;
+            overflow: hidden;
+            padding: 0 2rem;
+        }
+
+        .carousel-wrapper {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+            gap: 1rem; /* Espaçamento entre os blocos */
+            width: max-content;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+        }
+
+        /* Estilo das seções de IA */
+        .ia-block {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            height: 200px; /* Altura fixa para harmonia */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            overflow: hidden;
+            padding: 1rem;
+        }
+
+        .ia-block:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .ia-block a {
+            text-decoration: none;
+            color: #333;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .ia-block a:hover {
+            background: #f1f1f1;
+            color: #8400ff;
+        }
+
+        .ia-block h2 {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .ia-block p {
+            font-size: 0.875rem;
+        }
+
+        /* Estilo do rodapé */
+        footer {
+            background: linear-gradient(135deg, #0092cc, #941cf7);
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .carousel-wrapper {
+                grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas menores */
+            }
+
+            .ia-block {
+                height: 180px; /* Ajusta a altura dos blocos */
+            }
+
+            .ia-block h2 {
+                font-size: 1.125rem;
+            }
+
+            .ia-block p {
+                font-size: 0.75rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .carousel-wrapper {
+                grid-template-columns: 1fr; /* 1 coluna em telas pequenas */
+            }
+
+            .ia-block {
+                height: 160px; /* Ajusta a altura dos blocos */
+            }
+
+            .ia-block h2 {
+                font-size: 1rem;
+            }
+
+            .ia-block p {
+                font-size: 0.65rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ferramentas de Inteligência Artificial</h1>
+    </header>
+    <main>
+        <div class="carousel-container">
+            <div class="carousel-wrapper">
+                <section class="ia-block">
+                    <a href="https://www.dall-e.com/" accesskey="1" aria-label="DALL·E">
+                        <h2>DALL·E (Alt + 1)</h2>
+                        <p>Gerador de imagens a partir de texto</p>
+                    </a>
+                </section>
+                <section class="ia-block">
+                    <a href="https://www.copy.ai/" accesskey="2" aria-label="Copy.ai">
+                        <h2>Copy.ai (Alt + 2)</h2>
+                        <p>Geração de textos e copywriting</p>
+                    </a>
+                </section>
+                <section class="ia-block">
+                    <a href="https://www.runwayml.com/" accesskey="3" aria-label="RunwayML">
+                        <h2>RunwayML (Alt + 3)</h2>
+                        <p>Ferramentas criativas para IA</p>
+                    </a>
+                </section>
+                <section class="ia-block">
+                    <a href="https://www.nvidia.com/en-us/research/ai-playground/" accesskey="4" aria-label="NVIDIA AI Playground">
+                        <h2>NVIDIA AI Playground (Alt + 4)</h2>
+                        <p>Experimentos e demonstrações de IA</p>
+                    </a>
+                </section>
+                <section class="ia-block">
+                    <a href="https://www.bard.google.com/" accesskey="5" aria-label="Bard">
+                        <h2>Bard (Alt + 5)</h2>
+                        <p>Assistente de criação de conteúdo da Google</p>
+                    </a>
+                </section>
+                <section class="ia-block">
+                    <a href="https://www.jasper.ai/" accesskey="6" aria-label="Jasper AI">
+                        <h2>Jasper AI (Alt + 6)</h2>
+                        <p>Assistente de criação de texto e marketing</p>
+                    </a>
+                </section>
+                <section class="ia-block">
+                    <a href="https://www.pimeyes.com/" accesskey="7" aria-label="PimEyes">
+                        <h2>PimEyes (Alt + 7)</h2>
+                        <p>Busca facial por imagem</p>
+                    </a>
+                </section>
+                <section class="ia-block">
+                    <a href="https://www.zoho.com/zaia/" accesskey="8" aria-label="Zia">
+                        <h2>Zia (Alt + 8)</h2>
+                        <p>Assistente de IA para CRM e automação</p>
+                    </a>
+                </section>
+                <section class="ia-block">
+                    <a href="https://www.replika.ai/" accesskey="9" aria-label="Replika">
+                        <h2>Replika (Alt + 9)</h2>
+                        <p>Chatbot emocional e assistente pessoal</p>
+                    </a>
+                </section>
+            </div>
+            </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Dsenvolvido por: Mariana Alice.</p>
+    </footer>
+</body>
+</html>
